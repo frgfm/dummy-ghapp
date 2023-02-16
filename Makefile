@@ -4,8 +4,8 @@ docker:
 
 # Run it
 run:
-	docker run -d -p 3000:3000 --name dummy_bot frgfm/dummy-bot:node-16
+	docker-compose up -d --build
 
 # Stop it
 stop:
-	docker stop dummy_bot
+	docker-compose down
