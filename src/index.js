@@ -8,13 +8,6 @@ module.exports = (app) => {
     return await context.octokit.issues.createComment(issueComment)
   })
 
-  commands(app, 'review', async (context) => {
-    const issueComment = context.issue({
-      body: '🤖️: review in progress',
-    })
-    return await context.octokit.issues.createComment(issueComment)
-  })
-
   commands(app, 'reaction', async (context) => {
     const commentReaction = context.issue({
       comment_id: context.payload.comment.id,
