@@ -1,0 +1,29 @@
+{
+  "name": "fg-dummy-bot",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A Probot app",
+  "author": "François-Guillaume Fernandez",
+  "license": "Apache",
+  "homepage": "https://github.com/frgfm/dummy-ghapp",
+  "repository": "https://github.com/frgfm/dummy-ghapp.git",
+  "bugs": "https://github.com/frgfm/dummy-ghapp/issues",
+  "keywords": [
+    "probot",
+    "github-app",
+    "github"
+  ],
+  "scripts": {
+    "start": "probot run ./src/index.js"
+  },
+  "dependencies": {
+    "probot": "^12.2.4",
+    "probot-commands-pro": "^1.0.1"
+  },
+  "devDependencies": {
+    "smee-client": "^1.2.2"
+  },
+  "engines": {
+    "node": ">= 14"
+  }
+}
